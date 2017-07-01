@@ -1,0 +1,131 @@
+{
+	"title": {
+		"text": "人流量",
+		"subtext": "如有雷同纯属虚构"
+	},
+	"tooltip": {
+		"trigger": "axis"
+	},
+	"legend": {
+		"data": [
+			"最大人流量",
+			"最小人流量"
+		]
+	},
+	"toolbox": {
+		"show": true,
+		"feature": {
+			"magicType": {
+				"type": [
+					"line",
+					"bar"
+				]
+			}
+		}
+	},
+	"xAxis": {
+		"type": "category",
+		"boundaryGap": false,
+		"data": [
+			"一月",
+			"二月",
+			"三月",
+			"四月",
+			"五月",
+			"六月",
+			"七月",
+			"八月",
+			"九月",
+			"十月",
+			"十一月",
+			"十二月"
+		]
+	},
+	"yAxis": {
+		"type": "value",
+		"axisLabel": {
+			"formatter": "{value}"
+		}
+	},
+	"series": [
+		{
+			"name": "最大人流量",
+			"type": "line",
+			"data": [
+				"800",
+				"510",
+				"250",
+				"630",
+				"420",
+				"530",
+				"300",
+				"600",
+				"540",
+				"700",
+				"234",
+				"123"
+			],
+			"markPoint": {
+				"data": [
+					{
+						"type": "max",
+						"name": "最大值"
+					}, {
+						"type": "min",
+						"name": "最小值"
+					}
+				]
+			},
+			"markLine": {
+				"data": [
+					{
+						"type": "average",
+						"name": "平均值"
+					}
+				]
+			}
+		}, {
+			"name": "最小人流量",
+			"type": "line",
+			"data": [
+				"100",
+				"20",
+				"70",
+				"50",
+				"30",
+				"20",
+				"100",
+				"10",
+				"40",
+				"87",
+				"32",
+				"76"
+			],
+			"markPoint": {
+				"data": [
+					{
+						"name": "月最低",
+						"value": "10",
+						"xAxis": "20",
+						"yAxis": "30"
+					}
+				]
+			},
+			"markLine": {
+				"data": [
+					{
+						"type": "average",
+						"name": "平均值"
+					}
+				]
+			}
+		}
+	],
+	"dataZoom": [
+		{
+			"type": "slider",
+			"start": "30",
+			"end": "60"
+		}
+	]
+}

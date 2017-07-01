@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>散点图</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<script src="../js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/leap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-2.2.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/scat.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/scat_leap.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body {
+				background-color: lightgray
+			}
+			
+			.wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+			.buttong{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+			
+			#cir {
+				width: 20px;
+				height: 20px;
+				border-radius: 10px;
+				background-color: #0000FF;
+				position: absolute;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div id="main" style="width: 800px;height:600px;"></div>
+			<h6>	点击视图区域可拖动图像</h6>
+			<div class="buttong">
+				<button id="data" class="glyphicon glyphicon-hourglass btn btn-lg btn-primary">获取数据</button>
+				<button id="return" class="glyphicon glyphicon-arrow-left btn btn-lg btn-success">返回上一页</button>
+				<div id="cir"></div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

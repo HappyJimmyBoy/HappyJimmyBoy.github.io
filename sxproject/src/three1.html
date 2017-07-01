@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>数据</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mycss.css" />
+		<script src="../js/jquery-2.2.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/data.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="jumbotron" style="background-image:url(../img/data.jpg);">
+			<h1>数据可视化</h1>
+			<p>数据可视化技术的基本思想，是将数据库中每一个数据项作为单个图元元素表示，<br /> 大量的数据集构成数据图像，同时将数据的各个属性值以多维数据的形式表示，
+				<br /> 可以从不同的维度观察数据，从而对数据进行更深入的观察和分析
+			</p>
+			<p><a class="btn btn-info btn-lg" href="http://baike.baidu.com/link?url=Dbzo73ma1ShCRq2me2A_619HhOQmuO7ThEcSIYy5ogZRaf7JRnIHr5oLy1LQl25k3n2OO1KcGdfDUAij6JL0tq" role="button">Learn more</a></p>
+		</div>
+		<div class="container">
+			<div class="row">
+
+				<form action="" class="form-inline">
+					<div class="row">
+						<div class="col-md-3">
+							<label for="min">输入数据的范围：</label>
+						</div>
+						<div class="col-md-5">
+							<input type="number" id="min" placeholder="必填" class="bg-warning" value="0">---------------------------
+							<input type="number" id="max" placeholder="必填" class="bg-warning" value="1000">
+						</div>
+						<div class="clearfix">
+
+						</div>
+						<div class="col-md-3">
+							<label for="">X、Y、Z轴的含义：</label>
+						</div>
+						<div class="col-md-5">
+							<input type="text" id="xaxis"  value="月份"/><input type="text" id="yaxis" value="人数"/><input type="text" id="zaxis" value="温度"/>
+						</div>
+					</div>
+
+					<table border="1" cellspacing="" cellpadding="" class="table table-hover">
+
+						<tr class="success">
+							<td>X坐标值</td>
+							<td><input type="text" class="x1" value="二月" /></td>
+							<td><input type="text" class="x2" value="四月"/></td>
+							<td><input type="text" class="x3" value="六月"/></td>
+							<td><input type="text" class="x4" value="八月"/></td>
+							<td><input type="text" class="x5" value="十月"/></td>
+
+						</tr>
+						<tr class="info">
+							<td>Y坐标值</td>
+							<td><input type="text" class="y1" value="200"/></td>
+							<td><input type="text" class="y2" value="400"/></td>
+							<td><input type="text" class="y3" value="600"/></td>
+							<td><input type="text" class="y4" value="800"/></td>
+							<td><input type="text" class="y5" value="1000"/></td>
+
+						</tr>
+						<tr class="warning">
+							<td>Z坐标值</td>
+							<td><input type="text" class="z1" value="20" /></td>
+							<td><input type="text" class="z2" value="25"/></td>
+							<td><input type="text" class="z3" value="30"/></td>
+							<td><input type="text" class="z4" value="35"/></td>
+							<td><input type="text" class="z5" value="40"/></td>
+
+						</tr>
+						<tr class="success">
+							<td>第一行</td>
+							<td><input id="num11" type="number" value="300" /></td>
+							<td><input id="num12" type="number" value="400" /></td>
+							<td><input id="num13" type="number" value="600" /></td>
+							<td><input id="num14" type="number" value="700" /></td>
+							<td><input id="num15" type="number" value="400" /></td>
+						</tr>
+						<tr class="info">
+							<td>第二行</td>
+							<td><input id="num21" type="number" value="500" /></td>
+							<td><input id="num22" type="number" value="600" /></td>
+							<td><input id="num23" type="number" value="700" /></td>
+							<td><input id="num24" type="number" value="500" /></td>
+							<td><input id="num25" type="number" value="200" /></td>
+						</tr>
+						<tr class="active">
+							<td>第三行</td>
+							<td><input id="num31" type="number" value="300" /></td>
+							<td><input id="num32" type="number" value="600" /></td>
+							<td><input id="num33" type="number" value="900" /></td>
+							<td><input id="num34" type="number" value="600" /></td>
+							<td><input id="num35" type="number" value="300" /></td>
+
+						</tr>
+						<tr class="danger">
+							<td>第四行</td>
+							<td><input id="num41" type="number" value="200" /></td>
+							<td><input id="num42" type="number" value="400" /></td>
+							<td><input id="num43" type="number" value="688" /></td>
+							<td><input id="num44" type="number" value="987" /></td>
+							<td><input id="num45" type="number" value="120" /></td>
+
+						</tr>
+						<tr class="warning">
+							<td>第五行</td>
+							<td><input id="num51" type="number" value="333" /></td>
+							<td><input id="num52" type="number" value="555" /></td>
+							<td><input id="num53" type="number" value="666" /></td>
+							<td><input id="num54" type="number" value="111" /></td>
+							<td><input id="num55" type="number" value="666" /></td>
+
+						</tr>
+					</table>
+			</div>
+			<button id="bindData" type="button" value=" 确定" class="btn btn-success .btn-block">
+				确定
+				<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+					
+				</span>
+			</button>
+			<button type="reset" value=" 重置" class="btn btn-success .btn-block">
+				清除
+				<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+			</button>
+			</form>
+
+			<a href="three.html" class="btn btn-success .btn-block">三维柱状图
+			<span class="glyphicon glyphicon-signal"></span></a>
+		</div>
+
+		</div>
+	</body>
+
+</html>

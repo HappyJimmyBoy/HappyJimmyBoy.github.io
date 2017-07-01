@@ -1,0 +1,90 @@
+{
+				dataZoom: [{ // 这个dataZoom组件，默认控制x轴。
+					type: 'inside', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
+					start: 30, // 左边在 10% 的位置。
+					end: 60 // 右边在 60% 的位置。
+				}],
+				title: {
+					text: '男性女性身高体重分布',
+					subtext: '抽样调查来自: Heinz  2003'
+				},
+				grid: {//网格
+					left: '3%',
+					right: '4%',
+					bottom: '3%',
+					containLabel: true
+				},
+				
+				legend: {
+					data: ['女性', '男性'],
+					left: 'right'
+				},
+				xAxis: [{
+					type: 'value',
+					scale: true,
+					axisLabel: {
+						formatter: '{value} cm'
+					},
+					splitLine: {
+						lineStyle: {
+							type: 'dashed'
+						}
+					}
+				}],
+				yAxis: [{
+					type: 'value',
+					scale: true,
+					axisLabel: {
+						formatter: '{value} kg'
+					},
+					splitLine: {
+						lineStyle: {
+							type: 'dashed'
+						}
+					}
+				}],
+				series: [{
+					name: '女性',
+					type: 'scatter',
+					data: [
+						[161.2, 51.6],//数据结构
+					],
+					markPoint: {
+						data: [{
+							type: 'max',
+							name: '最大值'
+						}, {
+							type: 'min',
+							name: '最小值'
+						}]
+					},
+					markLine: {
+						data: [{
+							type: 'average',
+							name: '平均值'
+						}]
+					}
+				}, {
+					name: '男性',
+					type: 'scatter',
+					data: [
+						[174.0, 65.6]
+						
+					],
+					markPoint: {
+						data: [{
+							type: 'max',
+							name: '最大值'
+						}, {
+							type: 'min',
+							name: '最小值'
+						}]
+					},
+					markLine: {
+						data: [{
+							type: 'average',
+							name: '平均值'
+						}]
+					}
+				}]
+			};

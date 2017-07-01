@@ -1,0 +1,45 @@
+{
+  "title": {
+    "x": "center",
+    "y": "top",
+    "text": "生活消费"
+  },
+  "tooltip": {},
+  "legend": {
+    "x": "center",
+    "y": "40",
+    "data": [
+      "价格"
+    ]
+  },
+  "xAxis": {
+    "data": [
+      "吃饭",
+      "水电",
+      "衣服",
+      "鞋子",
+      "买书"
+    ]
+  },
+  "yAxis": {},
+  "series": [
+    {
+      "name": "销售数量",
+      "type": "bar",
+      "data": [
+        "1000",
+        "200",
+        "500",
+        "500",
+        "400"
+      ]
+    }
+  ],
+  "dataZoom": [
+    {
+      "type": "slider",
+      "start": 30,
+      "end": 60
+    }
+  ]
+}
