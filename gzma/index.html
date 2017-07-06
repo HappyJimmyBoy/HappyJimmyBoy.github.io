@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.myTitle {
+				margin-top: 30vh;
+				text-align: center;
+			}
+			
+			.left1 {
+				font-size: 20px;
+				color: red;
+			}
+			
+			.right1 {
+				font-size: 20px;
+				color: #0B9BA9;
+			}
+			
+			.mui-input-group {
+				margin-top: 5vh;
+				background-color: #efeff4;
+				padding-left: 2vw;
+				padding-right: 2vw;
+			}
+			
+			.mui-input-group:before {
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				height: 0px;
+				content: '';
+				-webkit-transform: scaleY(.5);
+				transform: scaleY(.5);
+				background-color: #c8c7cc;
+			}
+			
+			.mui-input-group:after {
+				position: absolute;
+				right: 6vw;
+				bottom: 0;
+				left: 6vw;
+				height: 1px;
+				content: '';
+				-webkit-transform: scaleY(.5);
+				transform: scaleY(.5);
+				background-color: #c8c7cc;
+			}
+			.mui-btn-primary{
+				padding-top: 5px;
+				padding-bottom: 5px;
+				width: 90vw;
+				margin-top: 5vh;
+				margin-left: 5vw;
+				margin-right: 5vw;
+
+			}
+			.mui-btn-primary a{
+				color: white;
+			}
+			
+		</style>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="myTitle">
+
+				<span class="left1">迈安元数据</span> |
+				<span class="right1">移动驾驶舱</span>
+
+			</div>
+			<div class="mui-input-group">
+				<div class="mui-input-row">
+					<label><span class="mui-icon mui-icon-person"></span>:</label>
+					<input type="text" class="mui-input-clear" placeholder="请输入用户名">
+				</div>
+				<div class="mui-input-row">
+					<label><span class="mui-icon mui-icon-locked"></span>：</label>
+					<input type="password" class="mui-input-clear mui-input-password" placeholder="请输入密码">
+				</div>
+			</div>
+			<a href="shouye.html" class="mui-btn mui-btn-primary mui-btn-block">登 录</a>
+
+		</div>
+	</body>
+
+</html>
