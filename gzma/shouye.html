@@ -168,16 +168,16 @@
 				</li>
 			</ul>
 			<!--</div>-->
-			<div id="shoucang" class="mui-control-content" style="height:80vh;">
-				<div class="title">收藏页面</div>
+			<div id="shoucang" style="height:80vh;" onclick="">
+				<div class="title"></div>
 
 			</div>
 			<div id="lixian" class="mui-control-content">
-				<div class="title">离线</div>
+				<div class="title"></div>
 
 			</div>
 			<div id="shezhi" class="mui-control-content">
-				<div class="title">设置</div>
+				<div class="title"></div>
 
 			</div>
 		</div>
@@ -192,45 +192,46 @@
 
 			$('.mui-tab-item').on('click', function() {
 				var title = $(this).find('.mui-tab-label').html();
-//				alert('test');
-				switch(title) {
-					case '首页':
-						$('#shouye').css('display', 'block');
-						$('#shoucang').css('display', 'none');
-						$('#lixian').css('display', 'none');
-						$('#shezhi').css('display', 'none');
-
-						break;
-					case '收藏':
-						$('#shouye').css('display', 'none');
-						$('#shoucang').css('display', 'block');
-						$('#lixian').css('display', 'none');
-						$('#shezhi').css('display', 'none');
-
-						break;
-					case '离线':
-						$('#shouye').css('display', 'none');
-						$('#shoucang').css('display', 'none');
-						$('#lixian').css('display', 'block');
-						$('#shezhi').css('display', 'none');
-
-						break;
-					case '设置':
-						$('#shouye').css('display', 'none');
-						$('#shoucang').css('display', 'none');
-						$('#lixian').css('display', 'none');
-						$('#shezhi').css('display', 'block');
-
-						break;
-				}
-				if(title != '首页') {
-					$('marquee').css('display', 'none');
-					$('#shouye').css('display', 'none');
-					$('header').html('<h1 class="mui-title" >' + title + '</h1>')
-				} else {
-					$('marquee').css('display', 'block');
-					$('header').html('<h1 class="mui-title"><span class="tLeft">迈安元素据</span>|<span class="tRight">移动驾驶舱</span></h1>')
-				}
+				alert('test');
+				//				switch(title) {
+				//					case '首页':
+				//						$('#shouye').css('display', 'block');
+				//						$('#shoucang').css('display', 'none');
+				//						$('#lixian').css('display', 'none');
+				//						$('#shezhi').css('display', 'none');
+				//
+				//						break;
+				//					case '收藏':
+				//						$('#shouye').css('display', 'none');
+				//						//						$('#shouye').hide();
+				//						$('#shoucang').css('display', 'block');
+				//						$('#lixian').css('display', 'none');
+				//						$('#shezhi').css('display', 'none');
+				//
+				//						break;
+				//					case '离线':
+				//						$('#shouye').css('display', 'none');
+				//						$('#shoucang').css('display', 'none');
+				//						$('#lixian').css('display', 'block');
+				//						$('#shezhi').css('display', 'none');
+				//
+				//						break;
+				//					case '设置':
+				//						$('#shouye').css('display', 'none');
+				//						$('#shoucang').css('display', 'none');
+				//						$('#lixian').css('display', 'none');
+				//						$('#shezhi').css('display', 'block');
+				//
+				//						break;
+				//				}
+				//				if(title != '首页') {
+				//					$('marquee').css('display', 'none');
+				//					$('#shouye').css('display', 'none');
+				//					$('header').html('<h1 class="mui-title" >' + title + '</h1>')
+				//				} else {
+				//					$('marquee').css('display', 'block');
+				//					$('header').html('<h1 class="mui-title"><span class="tLeft">迈安元素据</span>|<span class="tRight">移动驾驶舱</span></h1>')
+				//				}
 
 				$('#myTilte h1').html(title)
 			})
