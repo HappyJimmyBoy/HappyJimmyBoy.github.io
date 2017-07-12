@@ -53,19 +53,19 @@
 				transform: scaleY(.5);
 				background-color: #c8c7cc;
 			}
-			.mui-btn-primary{
+			
+			.mui-btn-primary {
 				padding-top: 5px;
 				padding-bottom: 5px;
 				width: 90vw;
 				margin-top: 5vh;
 				margin-left: 5vw;
 				margin-right: 5vw;
-
-			}
-			.mui-btn-primary a{
-				color: white;
 			}
 			
+			.mui-btn-primary a {
+				color: white;
+			}
 		</style>
 		<script type="text/javascript" charset="utf-8">
 			mui.init();
@@ -93,6 +93,23 @@
 			<a href="shouye.html" class="mui-btn mui-btn-primary mui-btn-block">登 录</a>
 
 		</div>
+		<script type="text/javascript">
+			window.onload = function() {
+				if(isWeiXin()) {
+					window.location.href = 'shouye.html';
+//					alert('微信');
+				}
+			}
+
+			function isWeiXin() {
+				var ua = window.navigator.userAgent.toLowerCase();
+				if(ua.match(/MicroMessenger/i) == 'micromessenger') {
+					return true;
+				} else {
+					return false;
+				}
+			}
+		</script>
 	</body>
 
 </html>

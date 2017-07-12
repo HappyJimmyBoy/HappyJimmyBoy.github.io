@@ -31,6 +31,23 @@
 				width: 100vw;
 				height: calc(100vh - 50px)
 			}
+			
+			.graContainer {
+				width: 100vw;
+				height: 200px;
+				display: flex;
+				align-items: stretch;
+			}
+			
+			.graLeft {
+				flex: 1;
+				/*background-color: red;*/
+			}
+			
+			.graRight {
+				flex: 1;
+				/*background-color: blue;*/
+			}
 		</style>
 		<script src="js/mui.min.js"></script>
 	</head>
@@ -41,16 +58,36 @@
 			<h1 class="mui-title">chart（EChart图表）</h1>
 		</header>
 		<div class="mui-content">
+			<div class="graContainer">
+				<div class="graLeft" id="barChart"></div>
+				<div class="graRight" id="lineChart"></div>
+			</div>
+			<div class="graContainer">
+				<div class="graLeft" id="lineChart1"></div>
+				<div class="graRight" id="barChart1"></div>
+			</div>
+			<div class="graContainer">
+				<div class="graLeft" id="barChart2"></div>
+				<div class="graRight" id="barChart3"></div>
+			</div>
+			<div class="graContainer">
+				<div class="graLeft" id="barChart4"></div>
+				<div class="graRight" id="barChart5"></div>
+			</div>
+			<div class="graContainer">
+				<div class="graLeft" id="barChart6"></div>
+				<div class="graRight" id="barChart7"></div>
+			</div>
 
-			<!--<div class="mui-content-padded">
-				<h5>柱图示例</h5>
+			<!--<div class="mui-content-padded">-->
+			<!--<h5>柱图示例</h5>
 				<div class="chart" id="barChart"></div>
 				<h5>线图示例</h5>
 				<div class="chart" id="lineChart"></div>
 				<h5>饼图示例</h5>
-				<div class="chart" id="pieChart"></div>
-			</div>-->
-			<iframe src="http://gzmian.com:5465/mmd/vision/openresource.jsp?resid=I40288129015363656365f2440153652a8df40e0e&user=demo&password=demo"></iframe>
+				<div class="chart" id="pieChart"></div>-->
+			<!--</div>-->
+			<!--<iframe src="http://gzmian.com:5465/mmd/vision/openresource.jsp?resid=I40288129015363656365f2440153652a8df40e0e&user=demo&password=demo"></iframe>-->
 		</div>
 
 		<script src="js/echarts-all.js"></script>
@@ -61,7 +98,7 @@
 					series: [{
 						name: '访问来源',
 						type: 'pie',
-						radius: '65%',
+						radius: '50%',
 						center: ['50%', '50%'],
 						data: [{
 							value: 335,
@@ -142,12 +179,26 @@
 			barChart.setOption(getOption('bar'));
 			var lineChart = echarts.init(byId('lineChart'));
 			lineChart.setOption(getOption('line'));
-			var pieChart = echarts.init(byId('pieChart'));
-			pieChart.setOption(getOption('pie'));
-			byId("echarts").addEventListener('tap', function() {
-				var url = this.getAttribute('data-url');
-				plus.runtime.openURL(url);
-			}, false);
+			var lineChart1 = echarts.init(byId('lineChart1'));
+			lineChart1.setOption(getOption('line'));
+			//			var pieChart = echarts.init(byId('pieChart'));
+			//			pieChart.setOption(getOption('pie'));
+			var barChart1 = echarts.init(byId('barChart1'));
+			barChart1.setOption(getOption('bar'));
+			var barChart2 = echarts.init(byId('barChart2'));
+			barChart2.setOption(getOption('bar'));
+			var barChart3 = echarts.init(byId('barChart3'));
+			barChart3.setOption(getOption('bar'));
+			var barChart4 = echarts.init(byId('barChart4'));
+			barChart4.setOption(getOption('bar'));
+			var barChart5 = echarts.init(byId('barChart5'));
+			barChart5.setOption(getOption('bar'));
+			var barChart6 = echarts.init(byId('barChart6'));
+			barChart6.setOption(getOption('bar'));
+			//			byId("echarts").addEventListener('tap', function() {
+			//				var url = this.getAttribute('data-url');
+			//				plus.runtime.openURL(url);
+			//			}, false);
 		</script>
 	</body>
 
