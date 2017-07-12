@@ -111,7 +111,7 @@
 				<a href="">效益，因管理而改变！管理，因我们(MMD)而改变！</a>
 			</marquee>
 
-			<ul id="shouye" class="mui-table-view mui-grid-view mui-grid-9 mui-control-content mui-active" style="position: absolute !important;bottom: 50px;">
+			<ul id="shouye"  class="mui-table-view mui-grid-view mui-grid-9 mui-control-content mui-active" style="position: absolute !important;bottom: 50px;">
 				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 					<a href="gonenng.html">
 						<span class="mui-icon mui-icon-spinner mui-spine"></span>
@@ -168,7 +168,7 @@
 				</li>
 			</ul>
 			<!--</div>-->
-			<div id="shoucang" class="mui-control-content" style="background-color: ;">
+			<div id="shoucang" class="mui-control-content" style="height:80vh;">
 				<div class="title">收藏页面</div>
 
 			</div>
@@ -183,6 +183,7 @@
 		</div>
 	</body>
 	<script src="js/mui.js"></script>
+	<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
 	<script>
 		mui.init({
 			swipeBack: true //启用右滑关闭功能
@@ -190,6 +191,7 @@
 		$(function() {
 			$('.mui-tab-item').click(function() {
 				var title = $(this).find('.mui-tab-label').html();
+				alert('ttt');
 				switch(title) {
 					case '首页':
 						$('#shouye').css('display', 'block');
